@@ -1,0 +1,12 @@
+name: Djar Djal
+type: theme
+description: 'The Djar Djal theme'
+core: 8.x
+base theme: classy
+stylesheets-remove:
+  - core/assets/vendor/normalize-css/normalize.css
+regions:
+  header: Header
+  content: Content
+  sidebar_first: 'Sidebar first'
+  footer: Footer
