@@ -1,0 +1,5 @@
+htdocs/sites/*/settings*.php
+htdocs/sites/*/services*.yml
+htdocs/sites/*/files
+htdocs/sites/*/private
+htdocs/sites/simpletest
