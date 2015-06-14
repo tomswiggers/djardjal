@@ -1,0 +1,12 @@
+body {
+  background-color: #f6f6f6;
+  color: #999999;
+  font-family: "Lato";
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+body #logo img {
+  display: block;
+  width: 100%;
+}

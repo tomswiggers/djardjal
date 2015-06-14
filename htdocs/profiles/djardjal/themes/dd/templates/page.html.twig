@@ -1,0 +1,42 @@
+<div id="page-wrapper" class="container">
+    <div id="page" class="row">
+        <header id="header" role="banner" aria-label="{{ 'Site header'|t }}" class="col-md-12">
+            <div id="header-container">
+                {% if logo %}
+                    <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home" id="logo" class="pull-left">
+                        <img class="pull-left" src="{{ logo }}" alt="{{ 'Home'|t }}"/>
+                        <div class="clearfix"></div>
+                    </a>
+                {% endif %}
+                {{ page.header }}
+                <div class="clearfix"></div>
+            </div>
+        </header>
+
+{{ page.primary_menu }}
+
+    <div class="layout-container">
+      {% if secondary_local_tasks %}
+        <div class="tabs-secondary clearfix" role="navigation">{{ secondary_local_tasks }}</div>
+      {% endif %}
+
+      {{ page.breadcrumb }}
+
+      <main class="page-content clearfix" role="main">
+        <div class="visually-hidden"><a id="main-content" tabindex="-1"></a></div>
+        {{ page.messages }}
+        {% if page.help %}
+          <div class="help">
+            {{ page.help }}
+          </div>
+        {% endif %}
+        {% if action_links %}
+          <ul class="action-links">
+            {{ action_links }}
+          </ul>
+        {% endif %}
+        {{ page.content }}
+      </main>
+
+    </div>
+</div>

@@ -1,0 +1,9 @@
+uuid: f30866cc-a015-4386-b808-8daaaefd9836
+langcode: en
+status: true
+dependencies: {  }
+name: type
+vid: type
+description: ''
+hierarchy: 0
+weight: 0
