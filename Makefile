@@ -5,21 +5,24 @@ DRUSH := drush
 build: clean chmod drushmake patch finish
 
 clean:
-	-rm -r $(ROOT)/sites/all
-	-rm -r $(ROOT)/includes
-	-rm -r $(ROOT)/misc
-	-rm -r $(ROOT)/modules
-	-rm -r $(ROOT)/scripts
-	-rm -r $(ROOT)/themes
-	-rm -r $(ROOT)/profiles/minimal
-	-rm -r $(ROOT)/profiles/standard
-	-rm -r $(ROOT)/profiles/testing
-	-rm -r $(ROOT)/vendor
-	-rm -f $(ROOT)/web.config
-	-rm -r $(ROOT)/.htaccess
-	-rm -r $(ROOT)/.gitignore
-	-rm $(ROOT)/*.php
-	-rm $(ROOT)/*.txt
+	-rm -rf $(ROOT)/core
+	-rm -rf $(ROOT)/sites/all
+	-rm -rf $(ROOT)/includes
+	-rm -rf $(ROOT)/misc
+	-rm -rf $(ROOT)/modules
+	-rm -rf $(ROOT)/scripts
+	-rm -rf $(ROOT)/themes
+	-rm -rf $(ROOT)/profiles/minimal
+	-rm -rf $(ROOT)/profiles/standard
+	-rm -rf $(ROOT)/profiles/testing
+	-rm -rf $(ROOT)/vendor
+	-rm -ff $(ROOT)/web.config
+	-rm -rf $(ROOT)/.htaccess
+	-rm -rf $(ROOT)/.gitignore
+	-rm -rf $(ROOT)/*.php
+	-rm -rf $(ROOT)/*.txt
+	-rm -rf $(ROOT)/example.gitignore
+	-rm -rf $(ROOT)/composer.json
 
 chmod:
 	chmod a+w $(ROOT)/sites/default
