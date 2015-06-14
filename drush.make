@@ -6,3 +6,6 @@ defaults[projects][subdir] = "contrib"
 
 ; Drupal core
 projects[] = drupal
+
+projects[] = features
+projects[] = config_update
