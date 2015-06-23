@@ -6,7 +6,8 @@ package: Core
 version: 8.1
 core: 8.x
 libraries:
-  - dd/bootstrap
+  - dd/purecdn
+  - dd/pure
 stylesheets-remove:
   - core/assets/vendor/jquery.ui/themes/base/dialog.css
   - @classy/css/layout.css
@@ -16,6 +17,7 @@ regions:
   content: Content
   messages: Messages
   help: Help
+  primary_menu: 'Primary menu'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
   sidebar_first: 'First sidebar'

@@ -4,6 +4,13 @@ bootstrap:
     base:
       css/bootstrap/css/bootstrap.css: {}
       css/style.css: {}
+pure:
+  version: VERSION
+  js:
+    js/ui.js: {}
+  css:
+    base:
+      css/layout/side-menu.css: {}
 global-styling:
   version: VERSION
   css:

@@ -10,3 +10,7 @@ body #logo img {
   display: block;
   width: 100%;
 }
+
+#header {
+  background-color: #4d1c1f;
+}
